@@ -31,6 +31,7 @@ if __name__ == '__main__':
         wait.until(EC.element_to_be_clickable((By.XPATH,'//*[@id="identifierNext"]'))).click()
         wait.until(EC.element_to_be_clickable((By.XPATH,'//*[@id="password"]/div[1]/div/div[1]/input'))).send_keys(password)
         wait.until(EC.element_to_be_clickable((By.XPATH,'//*[@id="passwordNext"]'))).click()
+        sleep(10)
 
     try:
         login()
